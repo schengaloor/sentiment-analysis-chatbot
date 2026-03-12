@@ -1,4 +1,3 @@
-# LiaPlus AI - AI Engineer Intern Assignment
 ## Chatbot with Sentiment Analysis
 
 ### 1. Overview:
@@ -14,24 +13,13 @@
 
    A. Install all required packages using: `pip install -r requirements.txt`
 
-   B. Obtain API Key for LLM Functionality
-   - Create an API Key on `https://openrouter.ai/settings/keys` (doesn't matter what you name it).
-   - Don't worry about credit limits, the model being used is free of charge.
-   - After creating key, add to environment variables by opening Windows CMD as admin, and entering the line: `setx OPENROUTER_API_KEY "please_enter_api_key_here"`
-   - Restart CMD, and enter `%OPENROUTER_API_KEY%`, you're all set if you see your API key.
-  
+   B. LLM (OpenRouter) API Key
+   
    C. Run the chatbot
-   - enter `streamlit run frontend.py` in terminal
-   - OR
-   - run `main.py` on terminal
+   - `streamlit run frontend.py`
 
-### 3. Technologies Used
-   - Python 3.10.9
-   - HuggingFace Transformers - [DistillBERT SST-2](https://huggingface.co/docs/transformers/en/model_doc/distilbert)
-   - [Grok 4.1 Fast using openrouter API](https://openrouter.ai/x-ai/grok-4.1-fast:free)
-   - [Streamlit](https://streamlit.io/)
 
-### 4. Sentiment Analysis Logic
+### Sentiment Analysis Logic
 
    - Transformer-based sentiment classifier to evaluate user expressions.
    - DistilBERT SS-2, implemented from HuggingFace Transformers library for binary sentiment classification.
@@ -58,8 +46,3 @@
    - This is a fully offline, rule-based backup chatbot.
    - Error handling is done in case of LLM failure automatically.
    - Aside from the actual chat logic, an offline backup summarizer is also present.
-
-### 6. Other Mentions
-   - I was not aware about how to implement tests and testing, and was not getting desired results when I tried.
-   - Wasn't sure if a UI was required, but added a simple one anyway.
-   - API key is hidden and added as environment variable to prevent misuse.
