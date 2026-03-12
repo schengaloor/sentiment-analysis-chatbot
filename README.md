@@ -1,6 +1,6 @@
 ## Chatbot with Sentiment Analysis
 
-### 1. Overview:
+###  Overview:
    - LLM based chatbot (Grok 4.1 Fast via OpenRouter)
    - Transformer based sentiment analysis using DistilBERT SST-2
    - Conversation level sentiment analysis (Tier 1)
@@ -9,7 +9,7 @@
    - Backup offline chatbot (rule-based)
    - Streamlit UI
 
-### 2. How to setup and use
+### Setup and use
 
    A. Install all required packages using: `pip install -r requirements.txt`
 
@@ -41,8 +41,8 @@
    - Sentiment label is displayed next to each user message.
    - These labels are stored and used to obtain conversation sentiment logic as explained in Tier 1.
 
-### 5. Backup Chatbot Logic
-   - In case connection to API cannot be made, or there are issues with the API key, a backup chat logic is in place.
+### Backup Chatbot
+   - In case connection to API cannot be made, a backup chat logic is in place.
    - This is a fully offline, rule-based backup chatbot.
    - Error handling is done in case of LLM failure automatically.
    - Aside from the actual chat logic, an offline backup summarizer is also present.
